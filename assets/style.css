@@ -293,6 +293,7 @@ h3 {
     font-family: 'Sora';
     background-color: #1fad24;
     color: #fff;
+    cursor: pointer;
     margin-right: 2rem;
     padding: 2rem 1rem;
     border: none;
