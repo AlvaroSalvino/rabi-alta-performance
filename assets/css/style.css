@@ -16,14 +16,30 @@ body {
 }
 
 
-#participar {
-    border: none;
-    font-family: Sora;
-    font-weight: 800;
-    font-size: 2.5rem;
-    color: #272a2c;
-    line-height: 1;
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
 }
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #272a2c;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px grey;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
 
 header {
     background-image: url("/assets/img/foto-background.png");
@@ -40,6 +56,15 @@ header {
 }
 
 @media screen and (min-width: 769px) {
+    header .primeiro-container #participar {
+        border: none;
+        font-family: Sora;
+        font-weight: 800;
+        font-size: 2.5rem;
+        color: #272a2c;
+        line-height: 1;
+    }
+
     header .primeiro-container h1 {
         font-size: 3.7rem;
         margin: -0.5rem 0 0 0;
@@ -162,7 +187,7 @@ header {
         background-color: #222;
         height: 35vw;
     }
-    
+
     .chamada .quinto-container .chamada-content .btn-green {
         font-family: 'Sora';
         background-color: #1fad24;
@@ -198,23 +223,45 @@ header {
         justify-content: center;
         align-items: center;
     }
-    
+
+    .btn-blue {
+        background-color: transparent;
+        color: #fff;
+        padding: 0.3rem 0.3rem;
+        border: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        font-size: 1.7rem;
+        font-weight: 100;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    .depoimentos .quarto-container h3 {
+        font-size: 3.3rem;
+        max-width: 50rem;
+    }
+
+    .depoimentos .quarto-container h2 {
+        font-weight: 100;
+        font-size: 2.6rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .btn-yellow {
+        background-color: #f0bd3b;
+        color: #282b30;
+        cursor: pointer;
+        padding: 15px 3rem;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
 }
-
-
-
-.btn-yellow {
-    background-color: #f0bd3b;
-    color: #282b30;
-    cursor: pointer;
-    padding: 15px 3rem;
-    border: none;
-    border-radius: 10px;
-    font-size: 18px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
 
 .segundo-container h2 {
     font-weight: 300;
@@ -242,22 +289,6 @@ h3 {
     font-size: 2rem;
     margin: 2rem 0 2rem 0;
 }
-
-.btn-blue {
-    background-color: transparent;
-    color: #fff;
-    padding: 0.3rem 0.3rem;
-    border: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    font-size: 1.7rem;
-    font-weight: 100;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-    display: inline-block;
-}
-
 
 .nao-quebra .amarelo {
     font-weight: 600;
@@ -297,11 +328,6 @@ h3 {
     width: 30px;
 }
 
-.quarto-container h2 {
-    font-weight: 100;
-    font-size: 2.6rem;
-    letter-spacing: 0.3rem;
-}
 
 .quarto-container h3 {
     font-size: 3.3rem;
@@ -389,6 +415,16 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+
+    header .primeiro-container #participar {
+        border: none;
+        font-family: Sora;
+        font-weight: 800;
+        font-size: x-large;
+        color: #272a2c;
+        line-height: 1;
+    }
+
     header .primeiro-container {
         margin: 5rem;
         text-align: center;
@@ -476,7 +512,7 @@ footer p {
         gap: 50px;
         background-color: #222;
     }
-    
+
     .chamada .quinto-container .chamada-content .btn-green {
         font-family: 'Sora';
         background-color: #1fad24;
@@ -492,4 +528,72 @@ footer p {
         transition: background-color 0.3s ease;
     }
 
+
+
+    .btn-blue {
+        background-color: transparent;
+        color: #fff;
+        padding: 0.3rem 0.3rem;
+        border: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        font-weight: 100;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+        display: inline-block;
+        font-size: x-large;
+    }
+
+    .btn-yellow {
+        background-color: #f0bd3b;
+        color: #282b30;
+        cursor: pointer;
+        padding: 15px 3rem;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .curso .terceiro-container h2 {
+        padding-top: 20px;
+        font-weight: 300;
+        font-size: x-large;
+        margin: 0;
+        padding-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .depoimentos .quarto-container h3 {
+        font-size: xx-large;
+        max-width: 50rem;
+    }
+
+    .depoimentos .quarto-container h2 {
+        font-weight: 100;
+        font-size: x-large;
+        letter-spacing: 0.3rem;
+    }
+
+    .chamada .quinto-container .chamada-content h2 {
+        font-size: xx-large;
+        color: #222;
+        margin-bottom: 20px;
+    }
+
+    .btn-blue {
+        font-size: larger;
+    }
+
+    .curso .terceiro-container .curso-content .check-list .nao-quebra p {
+        font-size: x-large;
+    }
+
+    header .primeiro-container .seu-lugar {
+        padding: 0;
+    }
 }
